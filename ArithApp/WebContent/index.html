@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Basic_Calculator</title>
+</head>
+<script>
+	function validateForm() {
+		var a = document.frm.fvalue.value;
+		if (a == "") {
+			alert("first value should not be blank...please enter a numeric value")
+			return false;
+		}
+		if (!Number(a)) {
+			alert("First value should be a Numeric Value...")
+		}
+		var b = document.frm.svalue.value;
+		if (b == "") {
+			alert("Second value should be Numeric Vlaue....")
+			return false;
+		}
+		if (!Number(b)) {
+			alert("Second value should be a Numeric Value")
+			return false;
+		}
+	}
+</script>
+<body>
+	<h1>Hello Welcome to new Startup Application</h1>
+	<form name=frm action="SumSrv" onSubmit="return validateForm()">
+		First value: <input type="text" name=fvalue /><br>
+		<br> Second value: <input type="text" name=svalue /><br>
+		<br> <input type="submit" value="Find Sum" />
+	</form>
+</body>
+</html>
