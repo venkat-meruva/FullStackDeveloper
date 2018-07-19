@@ -1,0 +1,5 @@
+spring:
+ message: Hello World!!!! Welcome to the new technology from Dev Profile
+
+server:
+ port: 8000
